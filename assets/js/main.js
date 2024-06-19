@@ -255,9 +255,5 @@ function SendMail(){
         email_id: document.getElementById("email_id").value,
         subject : document.getElementById("subject").value,
         message : document.getElementById("message").value
-        }).then(function (res){
-            // alert("Success! " + res.status);
-            // alert("Your message has been sent successfully!");
-            swal("Success!", "Your message has been sent!", "success");
         })
 }
