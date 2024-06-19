@@ -256,7 +256,7 @@ function SendMail(){
         subject : document.getElementById("subject").value,
         message : document.getElementById("message").value
     }
-    emailjs.send("service_04afl8x", "template_wxcojuf", params).then(function (res){
+    emailjs.send("service_04afl8x", "template_2thwwlw", params).then(function (res){
         // alert("Success! " + res.status);
         // alert("Your message has been sent successfully!");
         swal("Success!", "Your message has been sent!", "success");
