@@ -242,29 +242,22 @@ function validateMessage(){
 }
 
 /*==================== EMAIL SERVICE ====================*/ 
-function SendMail() {
-    // Validation checks
-    if (!validateName() || !validateEmail() || !validateMessage()) {
+function SendMail(){
+
+    if(!validateName() || !validateEmail() || !validateMessage() ){
+        // alert("Please fix the errors to send a message!");
         swal("Sorry!", "Please fix the errors to send a message!", "warning");
         return false;
     }
 
-    // Collecting form data
-    var params = {
-        fullName: document.getElementById("fullName").value,
+    emailjs.send("service_dbn6o4g","template_2thwwlw",{
+        from_name: document.getElementById("fullName").value,
         email_id: document.getElementById("email_id").value,
-        subject: document.getElementById("subject").value,
-        message: document.getElementById("message").value
-    };
-
-    // Sending email using EmailJS
-    emailjs.send("service_04afl8x", "template_wxcojuf", params)
-        .then(function (res) {
+        subject : document.getElementById("subject").value,
+        message : document.getElementById("message").value
+        }).then(function (res){
+            // alert("Success! " + res.status);
+            // alert("Your message has been sent successfully!");
             swal("Success!", "Your message has been sent!", "success");
         })
-        .catch(function (error) {
-            swal("Oops...", "Something went wrong. Please try again later.", "error");
-        });
-
-    return false; // Prevent the default form submission
 }
