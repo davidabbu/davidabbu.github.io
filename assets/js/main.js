@@ -198,6 +198,7 @@ var emailError = document.getElementById('email-error');
 var messageError = document.getElementById('message-error');
 
 function validateName(){
+    console.log('Validating name');
     var name = document.getElementById('fullName').value;
 
     if(name.length == 0){
@@ -213,6 +214,7 @@ function validateName(){
 }
 
 function validateEmail(){
+    console.log('Validating email');
     var email = document.getElementById('email_id').value;
 
     if(email.length == 0){
@@ -229,6 +231,7 @@ function validateEmail(){
 }
 
 function validateMessage(){
+    console.log('Validating message');
     var message = document.getElementById('message').value;
     var required = 30;
     var left = required - message.length;
@@ -248,12 +251,20 @@ function SendMail(){
         // alert("Please fix the errors to send a message!");
         swal("Sorry!", "Please fix the errors to send a message!", "warning");
         return false;
+    } else {
+        console.log('Sending email');
     }
 
-    emailjs.send("service_dbn6o4g","template_2thwwlw",{
+    var params = {
         from_name: document.getElementById("fullName").value,
         email_id: document.getElementById("email_id").value,
         subject : document.getElementById("subject").value,
         message : document.getElementById("message").value
-        })
+    };
+    
+
+    emailjs.send("service_dbn6o4g","template_2thwwlw",params).then(function(response){
+        console.log('SUCCESS!', response.status, response.text);
+        swal("Success!", "Your message has been sent successfully!", "success");
+    })
 }
