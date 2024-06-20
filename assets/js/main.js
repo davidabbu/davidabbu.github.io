@@ -256,9 +256,11 @@ function SendMail(){
         message : document.getElementById("message").value
     };
     
-
     emailjs.send("service_3uflj9k","template_2thwwlw", params).then(function(response){
         console.log('SUCCESS!', response.status, response.text);
         swal("Success!", "Your message has been sent successfully!", "success");
-    })
+    }), function(error){
+        console.log('FAILED...', error);
+        swal("Error!", "Failed to send message!", "error");
+    }
 }
