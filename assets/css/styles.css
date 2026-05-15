@@ -888,12 +888,16 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fff;
+  background-color: var(--first-color-lighter);
   border-radius: 1rem;
   box-shadow: 0 4px 16px rgba(0, 0, 0, .10);
   padding: 2rem 2.5rem;
   width: 100%;
   transition: box-shadow .3s, transform .3s;
+}
+
+body.dark-theme .participation__card {
+  background-color: var(--container-color);
 }
 
 .participation__card:hover {
