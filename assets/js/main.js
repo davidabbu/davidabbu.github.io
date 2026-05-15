@@ -108,6 +108,21 @@ let swiperPaper = new Swiper('.paper__container', {
     },
   });
 
+/*==================== PARTICIPATION SWIPER ====================*/
+let swiperParticipation = new Swiper('.participation__swiper', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 32,
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        568: { slidesPerView: 2 },
+        768: { slidesPerView: 3 },
+    },
+});
+
 /*==================== TESTIMONIAL ====================*/
 let swiperTestimonial = new Swiper('.testimonial__container', {
     loop: true,
