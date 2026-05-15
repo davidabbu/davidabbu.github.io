@@ -112,14 +112,22 @@ let swiperPaper = new Swiper('.paper__container', {
 let swiperParticipation = new Swiper('.participation__swiper', {
     loop: true,
     slidesPerView: 1,
-    spaceBetween: 32,
+    spaceBetween: 24,
     autoplay: {
-        delay: 2000,
+        delay: 2500,
         disableOnInteraction: false,
     },
+    navigation: {
+        nextEl: '.participation__button-next',
+        prevEl: '.participation__button-prev',
+    },
+    pagination: {
+        el: '.participation__pagination',
+        clickable: true,
+    },
     breakpoints: {
-        568: { slidesPerView: 2 },
-        768: { slidesPerView: 3 },
+        568: { slidesPerView: 2, spaceBetween: 24 },
+        768: { slidesPerView: 3, spaceBetween: 32 },
     },
 });
 
