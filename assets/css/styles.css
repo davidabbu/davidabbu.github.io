@@ -872,16 +872,16 @@ img {
 
 
 /*==================== PARTICIPATION IN PROJECTS ====================*/
-.participation__container {
-  overflow: initial;
-  padding-bottom: 3rem;
+.participation__swiper {
+  overflow: hidden;
+  position: relative;
+  padding: 1rem 3rem 3.5rem;
 }
 
 .participation__item {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 .75rem;
 }
 
 .participation__card {
@@ -902,22 +902,27 @@ img {
 }
 
 .participation__logo {
-  width: 200px;
-  height: 110px;
+  width: 180px;
+  height: 100px;
   object-fit: contain;
 }
 
-.participation__button-prev,
-.participation__button-next {
+.participation__nav {
   position: absolute;
   top: 50%;
-  transform: translateY(-60%);
+  transform: translateY(-70%);
   z-index: 10;
   cursor: pointer;
+  font-size: 2rem;
+  color: var(--first-color);
 }
 
-.participation__button-prev { left: -.5rem; }
-.participation__button-next { right: -.5rem; }
+.participation__prev { left: 0; }
+.participation__next { right: 0; }
+
+.participation__pagination {
+  bottom: .5rem !important;
+}
 
 /*==================== VIDEOS ====================*/
 

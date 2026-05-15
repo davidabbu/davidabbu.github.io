@@ -118,8 +118,8 @@ let swiperParticipation = new Swiper('.participation__swiper', {
         disableOnInteraction: false,
     },
     navigation: {
-        nextEl: '.participation__button-next',
-        prevEl: '.participation__button-prev',
+        nextEl: '.participation__next',
+        prevEl: '.participation__prev',
     },
     pagination: {
         el: '.participation__pagination',
