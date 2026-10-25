@@ -1540,3 +1540,58 @@ body.dark-theme .participation__card {
 
 }
 
+
+/* For wide desktop screens: use more of the width and scale up */
+@media screen and (min-width: 1280px){
+  html{
+    font-size: 18px;
+  }
+
+  .container,
+  .nav{
+    max-width: 1100px;
+  }
+
+  .home__blob{
+    width: 400px;
+  }
+
+  .home__social{
+    transform: translateX(-4rem);
+  }
+
+  .about__img{
+    width: 420px;
+  }
+
+  .projects__container{
+    grid-template-columns: repeat(3, 280px);
+  }
+
+  .paper__img{
+    width: 380px;
+  }
+
+  .contact__form{
+    width: 540px;
+  }
+}
+
+@media screen and (min-width: 1680px){
+  html{
+    font-size: 20px;
+  }
+
+  .container,
+  .nav{
+    max-width: 1240px;
+  }
+
+  .home__blob{
+    width: 460px;
+  }
+
+  .about__img{
+    width: 480px;
+  }
+}
