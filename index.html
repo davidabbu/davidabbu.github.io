@@ -13,45 +13,30 @@
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
-        <!--==================== EMAIL SERVICE ====================-->
-        <!-- Sweet Alert -->
-        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-        <!-- Email.JS -->
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-        <script type="text/javascript">
-            (function() {
-                emailjs.init('gF3M_-jS8KuvoCpV4');
-            })();
-        </script>
-
-        <!--==================== CALENDAR SERVICE ====================-->
-        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-
         <!--==================== TITLE and Favicon ====================-->
         <title>David Abella</title>
-        <!-- <link rel="shortcut icon" type="image/png" href="assets/img/"> --> 
-        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/svg+xml" href="/assets/img/logo.svg">
         <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon_io/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon_io/favicon-16x16.png">
-        <!-- <link rel="manifest" href="/site.webmanifest"> -->
-
-        <!-- MS Tile - for Microsoft apps-->
-        <meta name="msapplication-TileImage" content="https://github.com/nucerl/myPortfolio/blob/main/assets/snaps/light.png?raw=true" />    
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_io/apple-touch-icon.png">
+        <link rel="manifest" href="/assets/favicon_io/site.webmanifest">
+        <meta name="theme-color" content="#c6ff3d">
 
         <!-- HTML Meta Tags -->
-        <title>David Abella</title>
-        <meta name="description" content="High-level experience in nuclear safety analysis and multinational nuclear project development.">
+        <meta name="description" content="David Abella, PhD in Physics and researcher at Eurecat. Complex systems applied to social and urban issues: housing markets, segregation, mobility and collective behavior.">
+        <link rel="canonical" href="https://davidabbu.github.io/">
 
-        <!-- Facebook Meta Tags -->
+        <!-- Open Graph Meta Tags -->
         <meta property="og:type" content="website">
+        <meta property="og:url" content="https://davidabbu.github.io/">
         <meta property="og:title" content="David Abella">
-        <meta property="og:image" content="https://github.com/nucerl/myPortfolio/blob/main/assets/snaps/light.png?raw=true">
+        <meta property="og:description" content="Physicist. Researcher in complex systems applied to social and urban issues.">
+        <meta property="og:image" content="https://davidabbu.github.io/assets/img/profile_2_rec.jpg">
 
         <!-- Twitter Meta Tags -->
-        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:card" content="summary">
         <meta name="twitter:title" content="David Abella">
-        <meta name="twitter:image" content="https://github.com/nucerl/myPortfolio/blob/main/assets/snaps/light.png?raw=true">
+        <meta name="twitter:image" content="https://davidabbu.github.io/assets/img/profile_2_rec.jpg">
 
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-2367QRTG56"></script>
@@ -69,7 +54,9 @@
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav container">
-                <a href="#" class="nav__logo">David Abella's webpage</a>
+                <a href="#" class="nav__logo">
+                    <img src="assets/img/logo.svg" alt="" class="nav__logo-img"> David Abella
+                </a>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list grid">
@@ -91,6 +78,11 @@
                         <li class="nav__item">
                             <a href="#paper" class="nav__link">
                                 <i class="uil uil-scenery nav__icon"></i> Papers
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#videos" class="nav__link">
+                                <i class="uil uil-video nav__icon"></i> Talks
                             </a>
                         </li>
                         <li class="nav__item">
@@ -293,7 +285,7 @@
 
                                 <div class="skills__data">
                                     <div class="skills__titles">
-                                        <h3 class="skills__name">Artificial Inteligence | TensorFlow - Keras</h3>
+                                        <h3 class="skills__name">Artificial Intelligence | TensorFlow - Keras</h3>
                                     </div>
                                     <div class="skills__bar">
                                         <span class="skills__percantage skills__20"></span>
@@ -589,7 +581,7 @@
                                </div>
 
                                <div>
-                                   <h3 class="qualification__title">Reseacher</h3>
+                                   <h3 class="qualification__title">Researcher</h3>
                                    <span class="qualification__subtitle">SOIB Grant Young Talent</span>
                                    <div class="qualification__calendar">
                                        <i class="uil uil-calendar-alt"></i>
@@ -833,7 +825,7 @@
             </section>
 
             <!--==================== VIDEOS ====================-->
-            <section class="videos section" id="videos">
+            <section class="videos section" id="videos" data-id="videos">
                 <h2 class="section__title">Presentations, seminars and talks</h2>
                 <span class="section__subtitle"></span>
 
@@ -841,25 +833,30 @@
                     <div class="videos__content-top">
                         <div class="iframe__container">
                             <span class="videos__subtitle">PhD thesis defense: Aging and memory effects in social and economic dynamics</span>
-                            <iframe class="iframe" width="100%" height="100%" src="https://www.youtube.com/embed/5b5di2Lop5w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe class="iframe" width="100%" height="100%" src="https://www.youtube.com/embed/5b5di2Lop5w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                     </div>
                     <div class="videos__content">
                         <div class="iframe__container">
-                            <span class="videos__subtitle">Assesing the housing market spatial segmentation</span>
-                            <iframe class="iframe" width="100%" height="100%" src="https://www.youtube.com/embed/qmJLNnvaurU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <span class="videos__subtitle">Assessing the housing market spatial segmentation</span>
+                            <iframe class="iframe" width="100%" height="100%" src="https://www.youtube.com/embed/qmJLNnvaurU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="iframe__container">
+                            <span class="videos__subtitle">DEM-Debate final event at the European Parliament</span>
+                            <iframe class="iframe" width="100%" height="100%" src="https://commons.wikimedia.org/wiki/File:DEM-Debate_Final_Event_at_the_European_Parliament.webm?embedplayer=yes" title="DEM-Debate final event at the European Parliament" frameborder="0" loading="lazy" allowfullscreen></iframe>
+                            <span class="videos__credit">Video: <a href="https://commons.wikimedia.org/wiki/File:DEM-Debate_Final_Event_at_the_European_Parliament.webm" target="_blank">European Parliament</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>, via Wikimedia Commons</span>
                         </div>
                         <!--div class="iframe__container">
                             <span class="videos__subtitle">What is the age of Sunlight? </span>
-                            <iframe class="iframe" width="100%" height="100%" src="https://www.youtube.com/embed/Y2ZKCvnSVag?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe class="iframe" width="100%" height="100%" src="https://www.youtube.com/embed/Y2ZKCvnSVag?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                         <div class="iframe__container">
                             <span class="videos__subtitle">Half Life & Radioactive Decay</span>
-                            <iframe class="iframe" width="100%" height="100%" src="https://www.youtube.com/embed/CyPew95u3ws?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe class="iframe" width="100%" height="100%" src="https://www.youtube.com/embed/CyPew95u3ws?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                         <div class="iframe__container">
                             <span class="videos__subtitle">Nuclear Engineering Conversations</span>
-                            <iframe class="iframe" width="100%" height="100%" src="https://www.youtube.com/embed/EP2NPvoiEsw?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe class="iframe" width="100%" height="100%" src="https://www.youtube.com/embed/EP2NPvoiEsw?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div-->
                     </div>   
                  </div>
@@ -930,12 +927,12 @@
                     </div>
                 </div>
 
-                <p class="footer__copy">&#169; All rights reserved.</p>
+                <p class="footer__copy">&#169; 2026 David Abella. All rights reserved.</p>
             </div>
         </footer>
         
         <!--==================== SCROLL TOP ====================-->
-        <a href="" class="scrollup" id="scroll-up" style="color : #000">
+        <a href="#" class="scrollup" id="scroll-up" style="color : #000">
             <i class="uil uil-arrow-up scrollup__icon"></i>
         </a>
 

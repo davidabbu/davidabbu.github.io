@@ -196,6 +196,17 @@ img {
   color: var(--first-color);
 }
 
+.nav__logo{
+  display: flex;
+  align-items: center;
+  column-gap: .5rem;
+}
+
+.nav__logo-img{
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
 .nav__toggle{
   font-size: 1.1rem;
   cursor: pointer;
@@ -948,6 +959,19 @@ body.dark-theme .participation__card {
   display: block;
   font-size: var(--medium-font-size);
   margin-bottom: .1rem;
+}
+
+.videos__credit{
+  display: block;
+  text-align: center;
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
+  margin-top: .25rem;
+}
+
+.videos__credit a{
+  color: inherit;
+  text-decoration: underline;
 }
 
 /*==================== iFRAME ====================*/

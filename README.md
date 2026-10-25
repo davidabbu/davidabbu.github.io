@@ -1,3 +1,3 @@
 # David Abella's Responsive Portfolio Website
-## Website URL: www.davidabella.com
+## Website URL: https://davidabbu.github.io
 
