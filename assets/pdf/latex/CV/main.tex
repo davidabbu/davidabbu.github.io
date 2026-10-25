@@ -1,0 +1,201 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+\usepackage{multicol}
+\setlength{\columnsep}{0mm}
+%----------------------------------------------------------------------------------------
+\usepackage{lipsum}  
+
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.5\textwidth} 
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	{ \fontsize{18}{20} \textcolor{black}{\textbf{\MakeUppercase{David Abella Bujalance}}}} % First name
+	
+	\vspace{6pt}
+	
+	{\Large Researcher in Computational Social Science} % Career or current job title
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.22\textwidth} % 22% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	\icon{Globe}{11}{\href{https://davidabbu.github.io}{davidabbu.github.io}}\\
+    \icon{MapMarker}{11}{Barcelona, Spain}\\
+	
+\end{minipage}
+\begin{minipage}[t]{0.25\textwidth} % 25% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\icon{Envelope}{11}{\href{mailto:davidabbu@gmail.com}{davidabbu@gmail.com}}\\	
+    \icon{Github}{11}{\href{https://github.com/davidabbu}{github.com/davidabbu}}\\
+    \icon{LinkedinSquare}{11}{\href{https://www.linkedin.com/in/davidabbu/}{/in/davidabbu}}\\    
+    
+\end{minipage}
+
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.46\textwidth}
+    \cvsect{Summary}
+        PhD in Physics of Complex Systems (IFISC, 2024) and researcher in Computational Social Science at Eurecat. I apply complex systems physics to social and urban challenges, including housing market dynamics, urban segregation, collective behavior and online platforms such as Wikipedia, combining data-driven tools, network science and statistical physics.\\
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.465\textwidth}
+    \cvsect{Skills}
+    \vspace{-6pt}
+    
+    \begin{minipage}[t]{0.22\textwidth}
+        \textbf{Languages:}
+    \end{minipage}
+    \begin{minipage}[t]{0.7\textwidth}
+      Català, Castellano and English
+      \vspace{0.25 cm}
+    \end{minipage}
+
+    \begin{minipage}[t]{0.36\textwidth}
+        \textbf{Coding Languages:}
+    \end{minipage}
+    \begin{minipage}[t]{0.64\textwidth}
+      Python, Julia, Fortran, SQL and HTML.
+      \vspace{0.25 cm}
+    \end{minipage}
+
+    \begin{minipage}[t]{0.12\textwidth}
+        \textbf{Tools:}
+    \end{minipage}
+    \begin{minipage}[t]{0.88\textwidth}
+      Linux, Git/GitHub, Pandas, GeoPandas, PyTorch, TensorFlow, Parallel Computing and Inkscape.
+      \vspace{0.2 cm}
+    \end{minipage}
+    
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Experience}
+\begin{entrylist}
+	\entry
+		{01/2025 -- Present}
+		{Researcher in Computational Social Science}
+		{Eurecat, Centre Tecnològic de Catalunya}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item DEM-Debate project: Wikipedia editing and content moderation during the 2024 European elections.
+        \end{itemize}}
+	\entry
+        {2023 -- 2024}
+		{Predoctoral Researcher}
+		{Instituto de Fisica Interdisciplinar y Sistemas Complejos (IFISC - UIB/CSIC)}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item Real estate data analysis and modelling via geolocalization techniques and clustering methods.
+        \end{itemize}}
+        \entry
+		{09 -- 12/2023}
+		{iMOVE Grant -- Research stay}
+		{School of Mathematical Sciences, QMUL, London}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item New tools to assess social segregation from first principles, applied to many segregation datasets.
+        \end{itemize} }
+	\entry
+		{2022 -- 2023}
+		{SOIB Grant - Young Research Talent}
+		{Universitat de les Illes Balears (UIB)}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item Agent based modelling of socio-technical systems, focused on complex contagion.
+        \end{itemize} }
+	\entry
+		{2021 -- 2022}
+		{Predoctoral Researcher}
+		{Instituto de Fisica Interdisciplinar y Sistemas Complejos (IFISC - UIB/CSIC)}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item Study of segregation with aging dynamics. Phase diagram analysis and modelling.
+        \end{itemize}}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Education}
+\begin{entrylist}
+    \entry
+		{10/2021 - 10/2024}
+		{Ph.D in Physics of Complex Systems}
+		{Instituto de Fisica Interdisciplinar y Sistemas Complejos (IFISC - UIB/CSIC)}
+		{Thesis: \textit{Aging and memory effects in social and economic dynamics}. Awarded the doctoral thesis prize of the UIB Chair of Urban Studies (2024).}
+    \entry
+		{9/2019 - 12/2020}
+		{Master in Physics of Complex Systems}
+		{Instituto de Fisica Interdisciplinar y Sistemas Complejos (IFISC - UIB/CSIC)}
+		{Emergent properties of complex systems, stochastic processes and data-driven modeling.}
+    \entry
+		{9/2015 - 6/2019}
+		{Bachelor degree in Physics}
+		{Universitat de Barcelona}
+		{With Minor in Fundamental Physics.}
+\end{entrylist}
+\vspace{-0.4 cm}
+
+
+%----------------------------------------------------------------------------------------
+%	Publications
+%----------------------------------------------------------------------------------------
+\cvsect{Publications}
+\begin{entrylist}
+    \entry
+		{2026}
+		{Computational analysis of Wikipedia editorial activity during the 2024 European Parliament election}
+		{{\href{https://zenodo.org/records/22111198}{Software \& data}}}
+		{Reproducible pipeline and data on editing, reverts and moderation in 31 Wikipedia language editions.}
+    \entry
+		{2025}
+		{Exploring the spatial segmentation of housing markets from online listings}
+		{{\href{https://doi.org/10.1140/epjds/s13688-025-00551-z}{EPJ Data Science}}}
+		{Multipartite networks reveal the spatial segmentation of real estate markets across countries.}
+    \entry
+		{2024}
+		{Ordering dynamics and aging in the symmetrical threshold model}
+		{{\href{https://doi.org/10.1088/1367-2630/ad1ad4}{New J. Phys.}}}
+		{Phase diagram of a symmetric Granovetter–Watts model and how aging alters its phases.}
+\entry
+		{2023}
+		{Aging in binary-state models: The Threshold model for complex contagion}
+		{{\href{https://doi.org/10.1103/PhysRevE.107.024101}{Phys. Rev. E}}}
+		{Aging slows down complex contagion, yielding stretched exponential or power-law dynamics.}
+    \entry
+		{2023}
+		{Many-body contributions in water nanoclusters}
+		{{\href{https://doi.org/10.1021/acsnano.2c06077}{ACS Nano}}}
+		{The first coordination shell captures the energy minimum of water nanoclusters within 5$\%$.}
+    \entry
+		{2022}
+		{Aging effects in Schelling segregation model}
+		{{\href{https://doi.org/10.1038/s41598-022-23224-7}{Scientific Reports}}}
+		{Attachment to the current location changes both the statics and dynamics of segregation.}
+\end{entrylist}
+\vspace{-1 cm}
+
+\end{document}

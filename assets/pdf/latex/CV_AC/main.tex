@@ -1,0 +1,195 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.1 (8/1/17)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\profilepic{profile.jpg} % Profile picture
+
+\cvname{David Abella $\; \; $ Bujalance} % Your name
+\cvjobtitle{Physicist. Researcher in Computational Social Science.} % Job title/career
+
+\cvdate{} % Date of birth
+\cvaddress{Barcelona, Spain} % Short address/location, use \newline if more than 1 line is required
+\cvnumberphone{} % Phone number
+\cvsite{\href{https://davidabbu.github.io}{davidabbu.github.io}} % Personal website
+\cvmail{davidabbu@gmail.com} % Email address
+
+\hypersetup{hidelinks}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	 ABOUT ME
+%----------------------------------------------------------------------------------------
+
+\aboutme{}
+
+%----------------------------------------------------------------------------------------
+%	 SKILLS
+%----------------------------------------------------------------------------------------
+
+% Skill bar section, each skill must have a value between 0 an 6 (float)
+\skills{{Python /5.5},{Julia /5.5},{Fortran /5.5},{Office/5.9},{Latex /5.0}}
+
+%----------------------------------------------------------------------------------------
+%	 PAGE 1
+%----------------------------------------------------------------------------------------
+
+\makeprofile % Print the sidebar
+
+\section{Interests}
+
+\medskip
+
+As a physicist, my expertise lies in statistical mechanics, network science and data analysis, a powerful toolkit to decipher complex problems. I apply these skills to social and urban challenges, such as housing markets, urban segregation, collective behavior and the governance of online platforms like Wikipedia.
+
+\bigskip
+
+\section{Work Experience}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{2025-Now}{Researcher in Computational Social Science at Eurecat}{}{Eurecat, Centre Tecnològic de Catalunya. Computational analysis of Wikipedia editing and content moderation during the 2024 European Parliament election within the DEM-Debate project, with Wikimedia Europe and IViR (University of Amsterdam). \smallskip}
+	\twentyitem{2023-2024}{Research Technician at IFISC (CSIC)}{}{Research associated with the projects Nou Lloguer and Next4Mob to continue renting market data analysis and modelling. \smallskip}
+	\twentyitem{2022-2023}{Young researchers scholarship by SOIB (UIB)}{}{Research focused on different agent-based models of human dynamics. \smallskip}
+	\twentyitem{2022}{Research Technician at IFISC (CSIC)}{}{Research associated with the projects APASOS-CSIC and Nou Lloguer for the renting market data analysis. \smallskip}
+	\twentyitem{2021}{Predoctoral contract at IFISC}{}{8-month contract to continue the study of aging effects in threshold models with application in sociotechnical systems. Focused on the study of aging in the Noisy Schelling segregation model. \smallskip}
+\end{twenty}
+
+\medskip
+
+\section{Education}
+
+\medskip
+
+\begin{twenty} % Environment for a list with descriptions
+    \twentyitem{2021-2024}{PhD {\normalfont Physics of Complex Systems} at the Institute for Cross-Disciplinary Physics and Complex Systems (IFISC, UIB-CSIC)}{}{Thesis: \textit{Aging and memory effects in social and economic dynamics}. Supervisors: Maxi San Miguel and José J. Ramasco. Awarded the doctoral thesis prize of the UIB Chair of Urban Studies (2024).}
+
+    \twentyitem{2019-2020}{M.Sc {\normalfont Physics of Complex Systems} at Universitat de les Illes Balears}{}{Complex systems and computational social science, applying physics to interdisciplinary problems.
+	\smallskip
+	\begin{itemize}
+	    \item Master thesis: Perturbations propagation in self-organized patterns.
+	\end{itemize}
+	}
+
+    \twentyitem{2015-2019}{B.Sc {\normalfont Physics} at Universitat de Barcelona}{}{Minor in Fundamental Physics.
+	\smallskip
+	\begin{itemize}
+	    \item Bachelor thesis: Many-body contributions in water clusters (published in ACS Nano).
+	\end{itemize}
+	}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 PAGE 2
+%----------------------------------------------------------------------------------------
+
+\newpage
+\setcounter{colorCounter}{0} % Keep section titles green on every page
+
+\makeprofile % Print the sidebar
+
+\section{Scientific publications}
+
+\begin{twenty}
+    \twentyitem{2026}{Computational analysis of Wikipedia editorial activity during the 2024 European Parliament election}{}{D. Abella Bujalance, D. Laniado. Software and data, \href{https://zenodo.org/records/22111198}{Zenodo}.}
+
+    \twentyitem{2025}{Exploring the spatial segmentation of housing markets from online listings}{}{EPJ Data Science 14, 34.}
+
+    \twentyitem{2024}{Ordering dynamics and aging in the symmetrical threshold model}{}{New Journal of Physics 26, 013033.}
+
+    \twentyitem{2023}{Aging in binary-state models: the Threshold model for complex contagion}{}{Physical Review E 107, 024101.}
+
+    \twentyitem{2023}{Many-body contributions in water nanoclusters}{}{ACS Nano 17 (3), 1959-1964.}
+
+    \twentyitem{2023}{Unraveling higher-order dynamics in collaboration networks}{}{Preprint, \href{https://doi.org/10.48550/arXiv.2306.17521}{arXiv:2306.17521}.}
+
+    \twentyitem{2022}{Aging effects in Schelling segregation model}{}{Scientific Reports 12, 19376.}
+\end{twenty}
+
+\section{Awards}
+
+\begin{twenty}
+    \twentyitem{Nov-2024}{Doctoral thesis prize, UIB Chair of Urban Studies (2nd edition)}{}{Prize of 1,500\,€ for the thesis \textit{Aging and memory effects in social and economic dynamics}.}
+\end{twenty}
+
+\section{Collaboration and outreach events}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{2024}{Pint of Science 2024}{}{Talk for a general audience on the physics of social and urban dynamics. \smallskip}
+	\twentyitem{Sep-2023}{Associate researcher at Queen Mary University of London (QMUL)}{}{iMOVE research stay with Vincenzo Nicosia to study modeling techniques for spatial segregation. \smallskip}
+	\twentyitem{2022-2023}{Poster Party}{}{Member of the Poster Party committee organizing the outreach event at IFISC. \smallskip}
+	\twentyitem{Oct-2022}{Conference on Complex Systems 2022}{}{Volunteer and collaborator at the Conference on Complex Systems CCS 2022 in Palma. \smallskip}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 PAGE 3
+%----------------------------------------------------------------------------------------
+
+\newpage
+\setcounter{colorCounter}{0} % Keep section titles green on every page
+
+\makeprofile % Print the sidebar
+
+\section{Scientific presentations}
+
+\begin{twenty}
+    \twentyitem{Feb-2026}{Presentation of the DEM-Debate results at the project final event, European Parliament (Brussels - Belgium)}{}{}
+
+    \twentyitem{May-2025}{Presentation "Exploring Wikipedia community practices during the 2024 European Parliament election" at Wiki Workshop 2025 (online)}{}{}
+
+    \twentyitem{Feb-2024}{Oral presentation "Assessing the real estate spatial segmentation" at CS3-24 (Barcelona - Spain)}{}{}
+
+    \twentyitem{July-2023}{Oral presentation "Aging in binary state dynamics: Ordering in threshold models" at NetSci23 (Vienna - Austria)}{}{}
+
+    \twentyitem{May-2023}{Oral presentation "Aging in binary state dynamics: Ordering in threshold models" at CS3-23 (Santander - Spain)}{}{}
+
+    \twentyitem{Oct-2022}{Oral presentation "Aging in binary-state models: Threshold model of complex contagion" at CCS2022 (Palma - Spain)}{}{}
+
+    \twentyitem{Sep-2022}{Poster presentation "Aging in binary-state models" at II Summer school on Complex Socio-Technical systems (Palma - Spain)}{}{}
+
+    \twentyitem{Aug-2022}{Poster presentation "Aging in binary-state models" at X Summer school on Statistical physics of Complex Systems (Palma - Spain)}{}{}
+
+    \twentyitem{May-2022}{Poster presentation "Aging in Complex contagion" at FISES (Zaragoza - Spain)}{}{}
+
+    \twentyitem{Mar-2022}{Oral presentation "Aging effects in Schelling segregation model" at COMSOTEC Workshop (Tarragona - Spain)}{}{}
+
+    \twentyitem{Oct-2021}{Oral presentation "Aging effects in Schelling segregation model" at CCS2021 (Lyon - France)}{}{}
+\end{twenty}
+
+\section{Supplementary Education}
+
+\begin{twenty}
+    \twentyitem{2023}{Participation at the Complexity72h Workshop}{}{}
+    \twentyitem{2022}{Summer school about Artificial Intelligence "Retos de la IA" by AIHUB-CSIC}{}{}
+    \twentyitem{2022}{X Summer school on Statistical physics of Complex Systems by GEFENOL (at IFISC)}{}{}
+    \twentyitem{2022}{II Summer school on Complex Socio-Technical systems by COMSOTEC (at IFISC)}{}{}
+    \twentyitem{2021}{Introduction course to Artificial Intelligence at UBICS}{}{}
+\end{twenty}
+
+\end{document}
