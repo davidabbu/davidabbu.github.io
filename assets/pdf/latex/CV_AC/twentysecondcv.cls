@@ -176,8 +176,6 @@
     		\item Spanish - Native language
 		
 		    \item English - Advanced level
-		
-		    \item German - Primary level (currently learning)
 		\end{itemize}
 		
 			
