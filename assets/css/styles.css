@@ -614,9 +614,11 @@ img {
 
 .qualification__rounder{
   display: inline-block;
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
   background: url("../img/logo.svg?v=3") center / contain no-repeat;
+  position: relative;
+  z-index: 1;
 }
 
 
@@ -625,7 +627,7 @@ img {
   width: 1px;
   height: 100%;
   background-color: var(--first-color);
-  transform: translate(11.5px, -6px);
+  transform: translate(15.5px, -8px);
 
 }
 
