@@ -2,7 +2,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" viewBox="-110 -110 220 220" width="512" height="512">
 <title>Abella ForcaJo</title>
 <defs>
-    <linearGradient id="bee-body" x1=".2" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#f4ff7a"/><stop offset="1" stop-color="#c6ff3d"/></linearGradient>
+    <linearGradient id="bee-body" x1=".2" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#66d68b"/><stop offset="1" stop-color="#3acb6a"/></linearGradient>
     <linearGradient id="bee-wing" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#dfe9f5"/></linearGradient>
     <clipPath id="bee-clip"><circle cx="0" cy="12" r="64"/></clipPath>
   </defs>
