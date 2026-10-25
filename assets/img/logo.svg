@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" viewBox="-110 -110 220 220" width="512" height="512">
-<title>Abella ForcaJo</title>
+<title>David Abella</title>
 <defs>
     <linearGradient id="bee-body" x1=".2" y1="0" x2=".8" y2="1"><stop offset="0" stop-color="#66d68b"/><stop offset="1" stop-color="#3acb6a"/></linearGradient>
     <linearGradient id="bee-wing" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#dfe9f5"/></linearGradient>
     <clipPath id="bee-clip"><circle cx="0" cy="12" r="64"/></clipPath>
   </defs>
-  <g inkscape:label="Antenes" fill="none" stroke="#1d1406" stroke-width="7" stroke-linecap="round">
+  <g inkscape:label="Antenes" fill="none" stroke="#1d1406" stroke-width="7" stroke-linecap="round" transform="translate(0,15.46875)">
     <path d="M -18 -46 C -22 -70 -34 -84 -48 -86 C -60 -88 -64 -74 -54 -70"/>
     <path d="M 18 -46 C 22 -70 34 -84 48 -86 C 60 -88 64 -74 54 -70"/>
   </g>
   <g inkscape:label="Ales" stroke="#1d1406" stroke-width="6" stroke-linecap="round">
     <circle cx="-70" cy="6" r="27" fill="url(#bee-wing)"/>
     <circle cx="70" cy="6" r="27" fill="url(#bee-wing)"/>
-    <path d="M -50 6 H -92" fill="none" stroke-width="4"/>
-    <path d="M 50 6 H 92" fill="none" stroke-width="4"/>
+    <path d="M -50.14 6 H -95.16" fill="none" stroke-width="4.14"/>
+    <path d="M 50.17 6 H 95.72" fill="none" stroke-width="4.17"/>
   </g>
+  <path inkscape:label="Agulló" d="M -10,73 L 0,90 L 10,73 Z" fill="#1d1406" stroke="#1d1406" stroke-width="1.5" stroke-linejoin="miter"/>
   <circle inkscape:label="Cos" cx="0" cy="12" r="64" fill="url(#bee-body)" stroke="#1d1406" stroke-width="6"/>
   <g inkscape:label="Ratlles" clip-path="url(#bee-clip)" fill="#1d1406">
     <path d="M -80 6 Q 0 -8 80 6 V 32 Q 0 18 -80 32 Z"/>

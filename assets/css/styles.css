@@ -1091,6 +1091,20 @@ body.dark-theme .participation__card {
   padding: 2rem 0 3rem;
 }
 
+.footer__brand{
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.footer__logo{
+  width: 56px;
+  height: 56px;
+  padding: 6px;
+  background-color: #FFF;
+  border-radius: 50%;
+}
+
 .footer__title{
   font-size: var(--h2-font-size);
   margin-bottom: var(--mb-0-25);
